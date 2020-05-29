@@ -1,0 +1,10 @@
+<!--
+{% include "homePrima.html" %}
+Funciona igual que el include_once de php
+-->
+
+{% if name %}
+    <h1>Hi {{ name }}</h1>
+{% endif %}
+<h1>Welcome to our WebApp</h1>
+<a href="{{url_for('login.login')}}">Login</a>
